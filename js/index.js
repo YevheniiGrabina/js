@@ -29,10 +29,10 @@ console.log(totalPrice);
 const productName = "Droid";
 const pricePerItem = 3500;
 const message =`You picked ${productName}, price per item is ${pricePerItem} credits`;
-// Change code below this line
+
 
 function makeMessage (name, price) {
-  // Change code below this line
+  
    const message = `You picked ${name}, price per item is ${price} credits` ;
     return message;
 };
@@ -122,7 +122,7 @@ console.log(a <= b); // true
 console.log(b <= a); // false
 
 function isAdult(age) {
-  // Change code below this line
+  
   const passed = age>=18;
 
     return passed;
@@ -139,7 +139,7 @@ console.log(1 !== true); // true
 
 function isValidPassword(password) {
   const SAVED_PASSWORD = 'jqueryismyjam';
-  // Change code below this line
+  
   const isMatch = SAVED_PASSWORD === password ;
 
     return isMatch;
@@ -178,7 +178,7 @@ function checkAge(age) {
 
   function checkStorage(available, ordered) {
   let message;
-  // Change code below this line
+  
 if (ordered > available){
   message = 'Not enough goods in stock!';
 } else {
@@ -203,7 +203,7 @@ if (ordered > available){
     
     function checkStorage(available, ordered) {
   let message;
-  // Change code below this line
+  
 if (ordered === 0){
   message = 'There are no products in the order!';
 } else if (ordered > available){
@@ -245,7 +245,7 @@ console.log(number > start);
   const SILVER_DISCOUNT = 0.05;
   const GOLD_DISCOUNT = 0.1;
   let discount;
-  // Change code below this line
+  
 if (totalSpent >= 50000){
   discount = GOLD_DISCOUNT;
 } else if (totalSpent >=20000){
@@ -261,7 +261,7 @@ if (totalSpent >= 50000){
 // ДЛИННА СТРОКИ
     
     const courseTopic = "JavaScript essentials";
-// Change code below this line
+
 
 const courseTopicLength = courseTopic.length;
 const firstElement = courseTopic[0];
@@ -281,11 +281,156 @@ const lastElement = courseTopic[courseTopic.length -1];
   const normalizedInput = input.toLowerCase() ; // Change this line
 
   return normalizedInput;
+    }
+    
+    // Includes
+
+    function checkForName(fullName, name) {
+ const result = fullName.includes(name) ; // Change this line
+  return result;
+}
+
+    
+// Ранний возврат
+    function checkAge(age) {
+  if (age >= 18) { // Change this line
+    return "You are an adult";
+  }
+
+  return "You are a minor";
+}
+// 11111111111111111111111111111111111111112222222222222222222222
+    
+    
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  
+
+
+
+  if (password === ADMIN_PASSWORD) {
+    return "Welcome!";
+  }
+
+  return "Access denied, wrong password!";
+  // Change code above this line
 }
 
 
+//
+    
+    function checkStorage(available, ordered) {
+  
+
+  if (ordered === 0) {
+    return "Your order is empty!";
+  }  if (ordered > available) {
+    return "Your order is too large, not enough goods in stock!";
+  }
+    return "The order is accepted, our manager will contact you";
+    }
+    
+    // Масивы
+    const fruits = ["apple", "plum", "pear", "orange"] 
+    
+    // Переопредиление
+
+    const fruits = ["apple", "plum", "pear", "orange"];
+fruits[1]= "peach";
+fruits[3] = "banana";
+
+// Длинна масива
+const fruits = ["apple", "peach", "pear", "banana"];
+const fruitsArrayLength = fruits.length;
+
+// Function
+    
+    
+  function calculateEngravingPrice(message, pricePerWord) {
+   // Change code below this line
+  const price = (message.split(" ").length) * pricePerWord;
+  return price;
+   // Change code above this line
+}
+
+   // Change code above this line
+}
+    
+  //  SPLIT
+
+  
+  function splitMessage(message, delimeter) {
+  let words = (message.split(delimeter)) ;
+
+  return words;
+}
+    // JOIN
+  function makeStringFromArray(array, delimeter) {
+  let string =  (array.join(delimeter));
+ 
+  return string;
+}
+  
+  // МЕТОД SLICE
+
+  const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// Change code below this line
+const firstTwoEls = (fruits.slice(0,2)) ;
+const nonExtremeEls =(fruits.slice(1,4)) ;
+  const lastThreeEls = (fruits.slice(-3));
+  
+
+  // method CANCAD
+  const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+const newClients = ['Peach', 'Houston'];
+
+  const allClients = oldClients.concat(newClients); 
+  
 
 
+  // КОМПОЗИЦИЯ МАСИВОВ
+  function makeArray(firstArray, secondArray, maxLength) {
+    // Change code below this line
+return firstArray.concat(secondArray).slice(0,maxLength);
+
+
+    // Change code above this line
+  }
+  
+
+
+
+
+  // Цикл FOR
+
+  for (Инициализация; Условие; Пост - выражение) {
+  // Тело цикла
+  }
+  const start = 3;
+const end = 7;
+
+for (let i = start ; i <= end ; i += 1) { // Change this line
+  console.log(i);
+}
+
+
+function calculateTotal(number) {
+ // Change code below this line
+let sum = 0;
+for (let i = 1; i <= number; i += 1){
+sum += i;
+}
+return sum;
+  // Change code above this line
+  }
+  
+  const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+for (let i = 0; i< fruits.length; i+=1) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}
 
 
 
